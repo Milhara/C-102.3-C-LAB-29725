@@ -3,28 +3,28 @@
 
 int main()
 {
-       int no1;
-       printf("Enter an integer :");
-       scanf("%d",&no1);
+     char ch;
+     printf("Input a character");
+     scanf(" %c",&ch);
 
-       switch (no1 % 2)
+     switch (ch)
+    {
 
-         {
-             case 1:
-                  printf(" %d is an odd\n",no1);
+     case 'a': printf("a is a vowel");break;
+     case 'e': printf("e is a vowel");break;
+     case 'i': printf("i is a vowel");break;
+     case 'o': printf("o is a vowel");break;
+     case 'u': printf("u is a vowel");break;
+     case 'A': printf("A is a vowel");break;
+     case 'E': printf("E is a vowel");break;
+     case 'I': printf("I is a vowel");break;
+     case 'O': printf("O is a vowel");break;
+     case 'U': printf("U is a vowel");break;
 
-            break;
+     default: printf("Not a vowel ");
 
-
-            case 0:
-                  printf(" %d is an even\n",no1);
-
-            break;
-
-
-         }
-
-
-
+    }
     return 0;
+
+
 }

@@ -1,16 +1,28 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <math.h>
 
 int main()
 {
-       int no1;
-       printf("Enter an integer :");
-       scanf("%d",&no1);
+    char c;
 
-       if(no1 % 2==0)
-        printf("The number is even :%d\n",no1);
 
-       else
-        printf("The number is odd :%d\n",no1);
+    printf ("Enter 'c' for circumference | 'a' for area | 'v for volume :");
+    scanf(" %c",&c);
+
+
+    float r;
+    printf("Enter radius :");
+    scanf("%f",&r);
+
+    switch(c)
+    {
+        case 'c' : printf("Circumference: %.2f\n",2*M_PI*r);
+        case 'a' :printf ("Area: %.2f\n",M_PI*r*r);
+        case 'y' :printf ("Circumference: %.2f\n",(4/3)*M_PI*r*r*r);
+        break;
+
+    }
+
     return 0;
 }
